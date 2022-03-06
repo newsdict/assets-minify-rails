@@ -3,6 +3,7 @@
 namespace :assets_minify do
   desc "Minify the files"
   task :compress, :environment do
+    next unless File.directory?(::Rails.application.config.assets.output_path)
     output_path = Assets::Minify::OutputPath.new(
       ::Rails.application.config.assets.output_path
     )
