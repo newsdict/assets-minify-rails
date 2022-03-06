@@ -1,7 +1,7 @@
 # Assets::Minify::Rails
 
-image:https://img.shields.io/github/v/release/newsdict/assets-minify-rails[link=https://github.com/newsdict/assets-minify-rails/releases]
-image:https://img.shields.io/github/license/newsdict/assets-minify-rails[link=https://github.com/newsdict/assets-minify-rails/blob/main/LICENSE]
+![release](https://img.shields.io/github/v/release/newsdict/assets-minify-rails)
+![license](https://img.shields.io/github/license/newsdict/assets-minify-rails)
 
 ## Installation
 
