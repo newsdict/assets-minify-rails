@@ -29,7 +29,15 @@ $ rails assets_minify:compress
 
 ## Development
 
-This gem minifies js, css files under Rails.application.config.output_path with yui or terser.
+This gem minifies js, css files under Rails.application.config.output_path.
+
+### Support engines
+
+| engine | extension | Rails::Application.config.js_compressor | Rails::Application.config.css_compressor |
+| ---- | ---- | --- |
+| terser | .js | terser | - |
+| yui | .css, .js | yui, yui_compressor | yui, yui_compressor |
+| postcss | .css | - | postcss |
 
 ## Contributing
 

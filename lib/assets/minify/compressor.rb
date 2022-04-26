@@ -1,7 +1,10 @@
 # frozen_string_literal: true
+require 'mkmf'
 
 module Assets::Minify
   class Compressor
+    attr_accessor :config, :file_path
+
     def initialize(file_path)
       @config = ::Rails.application.config
       @file_path = file_path
@@ -20,6 +23,8 @@ module Assets::Minify
       case css_compressor
       when :yui, :yui_compressor
         ::YUI::CssCompressor.new.compress(File.read(@file_path))
+      when :postcss
+        `npx postcss #{@file_path}`
       end
     end
 
