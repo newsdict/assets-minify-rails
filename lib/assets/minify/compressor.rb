@@ -29,11 +29,11 @@ module Assets::Minify
     end
 
     def js_compressor
-      @config.js_compressor
+      @config.assets.js_compressor
     end
 
     def css_compressor
-      @config.css_compressor
+      @config.assets.css_compressor
     end
   end
 end
